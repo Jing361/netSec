@@ -103,7 +103,9 @@ public class MessageParser {
    public boolean Login() { 
       boolean success = false;
       try {  
-
+        //well fuck me sideways
+        this.Execute("IDENT");
+        this.Execute("PASSWORD");
       } catch (NullPointerException n) {
          System.out.println("MessageParser [Login]: null pointer error "+
 			    "at login:\n\t"+n);
